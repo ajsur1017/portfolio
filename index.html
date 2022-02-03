@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Surace Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            
+            <h1 id="contact">Contact Us!</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your name">
+            <small class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Your email">
+            <small class="error"></small>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="6" placeholder="Your Message"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Send Message">
+                <p id="sucess"></p><br>
+                <input type="button" onclick="show_hide_overlay()" value="Close Window">
+                <p id="sucess"></p>
+            </div>
+
+        </form>
+    </div>
+
+
+    <div>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler" />
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li id="contact" onclick="show_hide_overlay()">Click here to contact me!</li>
+                            <li id="hamburgerLiTitle">~ Links ~</li>
+                            <li><a href="https://www.linkedin.com/in/anthony-surace1017/" target="_blank"> LinkedIn </a>
+                            </li>
+                            <li><a href="https://github.com/ajsur1017" target="_blank"> GitHub </a></li>
+                            <li id="hamburgerLiTitle">~ Showcased Applications ~</li>
+                            <li><a href="https://fitnessdood.netlify.app/" target="_blank">FitnessDood</a></li>
+                            <li><a href="https://destiny-locker.herokuapp.com/" target="_blank"> Guardian Locker </a>
+                            </li>
+                            <li><a href="https://events-n-stuff.netlify.app/" target="_blank"> Events-N-Stuff </a></li>
+                            <li><a href="https://ajsur1017.github.io/poke-search.github.io/" target="_blank"> PokeSearch
+                                </a></li>
+                            <li><a href="https://itinerary-day-planner.netlify.app/" target="_blank"> Itinerary Planner
+                                </a></li>
+                            <li><a href="https://the-big-cheese.netlify.app/" target="_blank"> The Big Cheese </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <div id="nameTopDiv">
+            <h1 id="nameTop"><span>A</span>nthony <span>S</span>urace</h1>
+            <h2 id="nameTopH2">Software Engineer</h2>
+        </div>
+    </div>
+
+    <div id="mainArea">
+        <div id="mainTextArea">
+            <h1>Welcome!</h1><br />
+            <h2>Never Stop Learning!</h2><br>
+            <p>My name is Anthony Surace, a Software Engineer and Web Developer. I began my journey with <a
+                    href="FreeCodeCamp.com" target="_blank">FreeCodeCamp.com</a> in the begining of 2021. Immediately
+                intrigued, I wanted more. From YouTube totorials, to reading documentation I wanted to try everything. I
+                started looking into different schooling programs and bootcamps trying to find what was right for me.
+                After some searching I found my self on General Assemblies website, scheduling a meeting to start my
+                application process. After working on those inital projects learing things that I never thought I would
+                be able to acomplish on my own, I was accepted! I started in July of 2021 which began the rigorous
+                journey.</p><br>
+            <p>In January of 2022 I sucessfully completed the Software Engineering Immersive Remote course with General
+                Assembly. With my background using HTML, CSS, JavaScript; with ReactJS, VueJS, Ruby on Rails, PosgreSQL,
+                jQuery, AJAX, Express, EJS as well as many others; my current focus is building full stack applications.
+                I really enjoy bringing the simple JS functions to the forefront of UI/UX design.</p><br>
+            <p>Before I began my journey into Software Engineering and Web Development. I studied Criminal Justice and
+                grew an extensive background in Law Enforcement and Criminal Justice. Departubg ny carreer in Law
+                Enforcement was no easy decision however, with a strong support system I moved on and finally pursue my
+                ambition to work with computers. I plan to bring my strong leadership skills, communication and problem
+                solving skills that I honed to perfection the table continue to help drive my colleagues and I to
+                success in whatever challenges we face. </p><br><br>
+            <h2>My Works</h2><br><br>
+            <h4>FitnessDOOD</h4><br>
+            <a href="https://fitnessdood.netlify.app/" target="_blank"><img
+                    src="./assets/Screen Shot 2022-02-02 at 2.23.10 PM.png"
+                    alt="FitnessDOOD Preview Image Broken"></a><br><br>
+            <p>FitnessDOOD was an application that I built as my capstone project for General Assembly. Hosted on
+                Netlify, it is a CRUD (Create Read Update Delete) application that was built using Ruby on Rails with
+                PostgreSQL for the backend database which is hosted on Heroku. The frontend uses Vue.js with vue-router
+                and milligram.css. This
+                application was designed to help me keep track of what I eat/drink during
+                the day as well as some activity. If you are anything like me you struggle to keep track of all of those
+                little things with everything else going on in our crazy lives.</p><br>
+            <p>Currently this application does not have any Authentication, however I currently have a completed backend
+                with JWT/bcrypt authentication that just require some front end work to be completed. Coming soon!</p>
+            <br><br>
+
+            <h4>Guardian Locker</h4><br>
+            <a href="https://destiny-locker.herokuapp.com/" target="_blank"><img
+                    src="./assets/Screen Shot 2022-02-02 at 2.40.39 PM.png"
+                    alt="Guardian Locker Preview Image Broken"></a><br><br>
+            <p>Guardian Locker is another CRUD application that was built using EJS with mongoDB for data management and
+                express-session with bcrypt for authentication that is hosted live on Heroku. I am Hoplessly adictied to
+                Destiny 2 and its where I
+                draw about 60% of my creative ideas from. This application that I use daily, helps me keep track of
+                different loadouts that I use in game as well as the very import aspect of fashion design in game. I am
+                activly working on this application working on adding Bungies own API in hopes that it can one day
+                become a featurned compaion app for Destiny 2. </p><br><br>
+
+            <h4>Events-N-Stuff</h4><br>
+            <a href="https://events-n-stuff.netlify.app/" target="_blank"><img
+                    src="./assets/Screen Shot 2022-02-02 at 2.54.26 PM.png"
+                    alt="Events-N-Stuff Preview Image Broken"></a><br><br>
+            <p>Events-N-Stuff is a application that was built as a part of a small team of developers where I was tasked
+                with
+                implementing JSON web token authentication as well as construction the backend database using express
+                with MongoDB. The end result was a CRUD application that you can store, organize and even mark you
+                attendance for different events. Features a CSS Carousel and uses Bootstrap.css for several design
+                components. Some future goals the team and I have is to use this frontend application with a third part
+                event API that stores and updates events nationwide!</p><br><br>
+
+            <h4>PokéSearch</h4><br>
+            <a href="https://ajsur1017.github.io/poke-search.github.io/" target="_blank"><img class="mobile"
+                    src="./assets/Screen Shot 2022-02-02 at 3.44.38 PM.png"
+                    alt="PokeSearch Preview Image Broken"></a><br><br>
+            <p>PokéSearch is a small application built for mobile that uses an Ajax function to make a call to a thrid
+                party API by searching using the Pokémon name or ID number. The Next button generates a random number to
+                use as a search parameter to display a random Pokémon to the user. Some unuique things here was the use
+                of a default image rather than leaving the display area blank. </p><br><br>
+
+            <h4>Itinerary Planner</h4><br>
+            <a href="https://itinerary-day-planner.netlify.app/" target="_blank"><img
+                    src="./assets/Screen Shot 2022-02-02 at 3.48.50 PM.png"
+                    alt="Itinerary Planner Preview Image Broken"></a><br><br>
+            <p>This Itinerary day planner is an application built with Ruby on Rails using PostgreSQL for the backend
+                database hosted on Heroku. The frontend which is live on Netlify, was buily using ReactJS. A CRUD
+                application that is simple enough to understand even for my elderly grandparents, help you stay on track
+                with you busy schedule throughout the day. Coming soon to this application in a future update is the
+                ability to have a
+                unique profile to organize your own personal day. </p><br><br>
+
+            <h4>The Big Cheese</h4><br>
+            <a href="https://the-big-cheese.netlify.app/" target="_blank"><img
+                    src="./assets/Screen Shot 2022-02-02 at 3.50.16 PM.png"
+                    alt="The Big Cheese Preview Image Broken"></a><br><br>
+            <p>The Big Cheese is a open CRUD application built using MongoDB for database management with ReactJS
+                powering the frontend. This application is open to anyone to post their favorite cheese in honor of my
+                beloved instructor from General Assemply, Alex Merced, who is just as in love with cheese as he is
+                coding!</p><br><br>
+
+            <br><br><br><br><br><br>
+
+
+
+
+        </div>
+        <footer>
+            <div>Desgined and built by Anthony Surace</div>
+
+        </footer>
+    </div>
+
+
+
+
+</body>
+<script src="script.js"></script>
+</html>

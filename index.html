@@ -12,20 +12,20 @@
 
 <body>
     <div id="overlay">
-        <form onsubmit="event.preventDefault(); validateForm()">
+        <form onsubmit="validateForm()" action="https://formsubmit.co/ajsur1017@gmail.com" method="POST" >
             
             <h1 id="contact">Contact Us!</h1>
 
             <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Your name">
+            <input type="text" id="name" name="name" placeholder="Your name">
             <small class="error"></small>
 
             <label for="email">Email:</label>
-            <input type="text" id="email" placeholder="Your email">
+            <input type="text" id="email" name="email" placeholder="Your email">
             <small class="error"></small>
 
             <label for="message">Message:</label>
-            <textarea id="message" rows="6" placeholder="Your Message"></textarea>
+            <textarea id="message" rows="6" name="message" placeholder="Your Message"></textarea>
             <small class="error"></small>
 
             <div class="center">
